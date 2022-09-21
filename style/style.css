@@ -278,9 +278,40 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.audience_item {
+    max-width: 262px;
+    height: 300px;
+    width: 100%;    
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.audience_image {
+    display: inline-block;
+    margin: 22px auto;
+}
+
+.audience_item__link {
+    text-decoration: none;
+}
+
+.audience_category--name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin-bottom: 33px;
+}
+
 .audience_item:hover {
-    opacity: .7;
-    box-shadow: 3px 3px 5px 2px rgba(129, 189, 230, 0.5);
+    background: #3141C5;
+    /* box-shadow: 3px 3px 5px 2px rgba(129, 189, 230, 0.5); */
+    cursor: pointer;
+}
+
+.audience_item:hover .audience_category--name {
+    color: #fff;
 }
 
 .logos_2 {
