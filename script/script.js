@@ -5,12 +5,10 @@
 // })
 
 $('.job-items > div').on('click', function() {
-    $(this).children('.about-icon').toggleClass('about-rotate-icon');
+    $(this).children('.job_items_right').toggleClass('about-rotate-icon');
     $(this).parent('.job-items').toggleClass('change-color');
     $(this).next('.about-text').slideToggle(200);
 })
-
-
 
 $('.customers_items > div').on('click', function() {
     $(this).parent('.customers_items').toggleClass('change-item-color');

@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foundation</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
 </head>
 
 <body>
@@ -21,9 +24,9 @@
             <div class="logo flex">
                 <img src="./img/header/logo.svg" alt="logo">
                 <div>
-                    <h6 class="logo_title">
+                    <h5 class="logo_title">
                         Foundation
-                    </h6>
+                    </h5>
                     <p class="logo_text">
                         Startup landing template
                     </p>
@@ -32,10 +35,10 @@
             <nav class="header_nav flex">
                 <ul class="header_ul flex">
                     <li class="header_li">
-                        <a class="header_link" href="#">Home</a>
+                        <a class="header_link" id="about-link" href="#">Home</a>
                     </li>
                     <li class="header_li">
-                        <a class="header_link" href="#">Stories</a>
+                        <a class="header_link" id="feedback-link" href="#">Stories</a>
                     </li>
                 </ul>
                 <button class="button">
@@ -43,7 +46,6 @@
                 </button>
             </nav>
 
-            <!-- Burger menu -->
 
             <div class="menu">
                 <input checked type="checkbox" class="checkbox">
@@ -64,7 +66,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- Burger menu End-->
         </div>
     </header>
     <section class="main">
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <div>
-                <img src="./img/header/main_img.png" alt="main_img" class="main_img">
+                <img src="./img/header/main_img.png" alt="main_image" class="main_img">
             </div>
         </div>
     </section>
@@ -130,8 +131,7 @@
             <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
         </div>
     </section>
-    <!-- Домашнє Завдання 28.09.2022 -->
-    <section class="features">
+    <section id="about" class="features">
         <div class="container features_flex-column">
             <h6 class="info_pretitle info_pretitle-green">
                 Features
@@ -150,7 +150,6 @@
                             d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z"
                             fill="#2B292D" />
                     </svg>
-                    <!-- <img class="custom_icon" src="./img/features_icons/features_icon1.svg" alt="features_icon1"> -->
                     <p class="custom_title">
                         Acquire new customers
                     </p>
@@ -194,7 +193,6 @@
 
         </div>
     </section>
-    <!-- Кінець блоку Домашнє Завдання 28.09.2022 -->
     <section class="inbox">
         <div class="container flex flex__inbox-column">
             <div class="container-image">
@@ -341,6 +339,61 @@
             <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
         </div>
     </section>
+
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <div class="carusel">
+                <div class="carusel__item">
+                    <p class="carusel_pretitle">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="carusel__item_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
+                        pages,
+                        send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <p class="inbox_name">
+                        Viella Malkovich
+                    </p>
+                    <p class="inbox_position">
+                        Creative Director at Johnson
+                    </p>
+                </div>
+                <div class="carusel__item">
+                    <p class="carusel_pretitle">
+                        If you fall asleep now, you will dream. If you study now, you will live your dream
+                    </p>
+                    <p class="carusel__item_text">
+                        “Think of all the beauty still left around you and be happy, they are composed like music. Guided by his sense of beauty”
+                    </p>
+                    <p class="inbox_name">
+                        Sarah Whiteman
+                    </p>
+                    <p class="inbox_position">
+                        Tanahcon CEO at SpaceX
+                    </p>
+                </div>
+                <div class="carusel__item">
+                    <p class="carusel_pretitle">
+                        Not everyone can truly succeed in everything. But success only comes with self-management and determination
+                    </p>
+                    <p class="carusel__item_text">
+                        “Each of us has within our power the ability to disrupt and transform some of the barriers”
+                    </p>
+                    <p class="inbox_name">
+                        Elon Mask
+                    </p>
+                    <p class="inbox_position">
+                        Director at SpaceX
+                    </p>
+                </div>
+            </div>
+            <div class="carusel_img">
+                <img src="/img/green_ball.png" alt="green_ball">
+            </div>
+        </div>
+    </section>
+
     <section class="hiring">
         <div class="container hiring_flex-column">
             <h1 class="info_title hiring_title">
@@ -355,15 +408,13 @@
             <div>
                 <div class="job-items">
                     <div class="flex">
-                        <p class="job-title">
-                            Front-End Developer
-                        </p>
-                        <p class="job-city">
-                            Los Angeles / Remote
-                        </p>
-                        <p class="about-icon">
-                            >
-                        </p>
+                        <div class="job-items_left">
+                            <p class="job-title">Front-End Developer</p>
+                            <p class="job-city">Los Angeles / Remote</p>
+                        </div>
+                        <div class="job_items_right">
+                            <p class="about-icon">></p>
+                        </div>
                     </div>
                     <p class="about-text">
                         Everything you need to start building – including open-source code, documentation.
@@ -371,36 +422,30 @@
                 </div>
                 <div class="job-items">
                     <div class="flex">
-                        <p class="job-title">
-                            Community Manager
-                        </p>
-                        <p class="job-city">
-                            New York / Full-Time
-                        </p>
-                        <p class="about-icon">
-                            >
-                        </p>
+                        <div class="job-items_left">
+                            <p class="job-title">Community Manager</p>
+                            <p class="job-city">New York / Full-Time</p>
+                        </div>
+                        <div class="job_items_right">
+                            <p class="about-icon">></p>
+                        </div>
                     </div>
                     <p class="about-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ipsa eligendi nulla laborum
-                        iste deleniti.
+                        Everything you need to start building – including open-source code, documentation.
                     </p>
                 </div>
                 <div class="job-items">
                     <div class="flex">
-                        <p class="job-title">
-                            UX/UI Designer
-                        </p>
-                        <p class="job-city">
-                            New York / Full-Time
-                        </p>
-                        <p class="about-icon">
-                            >
-                        </p>
+                        <div class="job-items_left">
+                            <p class="job-title">UX/UI Designer</p>
+                            <p class="job-city">New York / Full-Time</p>
+                        </div>
+                        <div class="job_items_right">
+                            <p class="about-icon">></p>
+                        </div>
                     </div>
                     <p class="about-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ipsa eligendi nulla laborum
-                        iste deleniti.
+                        Everything you need to start building – including open-source code, documentation.
                     </p>
                 </div>
             </div>
@@ -425,10 +470,8 @@
             <img src="./img/all_surfaces_covered_items/item-7.png" alt="allsurfaces_item-7" class="surface_item">
         </div>
     </section>
-    <section class="start_free_trial">
-        <div class="start_free_image">
-            <img src="./img/cat_in_window.png" alt="cat_in_window">
-        </div>
+    <section class="start_free_trial flex">
+        <img class="start_free_image" src="./img/cat_in_window.png" alt="cat_in_window">
         <div class="start_trial_description">
             <h1 class="start_trial_title">
                 Start your free trial.
@@ -573,11 +616,15 @@
             </button>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div id="up">
+        <span>></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./script/bxslider.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 
 </html>

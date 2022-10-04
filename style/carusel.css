@@ -1,0 +1,54 @@
+.bx-wrapper {
+    text-align: center;
+}
+
+.bx-viewport {
+    margin-bottom: 38px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-item {
+    background: #2B292D;
+    opacity: 0.2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-item.active,
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-item:focus,
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-item:hover {
+    background: #3142C5;
+    opacity: 1;
+}
+
+.bx-pager {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 67px;
+}
+
+.bx-pager-link {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1090px) {
+    .bx-viewport {
+        margin-bottom: 14px;
+    }
+
+    .bx-pager {
+        padding-bottom: 51px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bx-viewport {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .bx-pager {
+        padding-bottom: 40px;
+    }
+}
