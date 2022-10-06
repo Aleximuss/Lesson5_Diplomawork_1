@@ -12,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+        integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/carusel.css">
 </head>
@@ -24,607 +26,601 @@
             <div class="logo flex">
                 <img src="./img/header/logo.svg" alt="logo">
                 <div>
-                    <h5 class="logo_title">
-                        Foundation
-                    </h5>
-                    <p class="logo_text">
-                        Startup landing template
-                    </p>
+                    <h6 class="logo_title">Foundation</h6>
+                    <p class="logo_text">Startup landing template</p>
                 </div>
             </div>
             <nav class="header_nav flex">
-                <ul class="header_ul flex">
-                    <li class="header_li">
-                        <a class="header_link" id="about-link" href="#">Home</a>
-                    </li>
-                    <li class="header_li">
-                        <a class="header_link" id="feedback-link" href="#">Stories</a>
-                    </li>
-                </ul>
-                <button class="button">
-                    Get started
-                </button>
+                <div class="menu">
+                    <input type="checkbox" class="header_checkbox">
+                    <div class="check-wrapper">
+                        <div class="check"></div>
+                        <div class="check"></div>
+                        <div class="check"></div>
+                    </div>
+                    <div class="menu-all flex">
+                        <ul class="header_ul flex">
+                            <li class="header_li">
+                                <a class="header_link" id="about-link" href="#">Home</a>
+                            </li>
+                            <li class="header_li">
+                                <a class="header_link" id="feedback-link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <button class="button header_button">
+                            Get started
+                        </button>
+                    </div>
+                </div>
             </nav>
-
-
-            <div class="menu">
-                <input checked type="checkbox" class="checkbox">
-                <div class="check-wrapper">
-                    <div class="check"></div>
-                    <div class="check"></div>
-                    <div class="check"></div>
-                </div>
-                <div class="menu-all flex">
-                    <ul class="flex_menu flex">
-                        <li class="flex_menu_li"><a href="#" class="flex_menu_link">Home</a></li>
-                        <li class="flex_menu_li"><a href="#" class="flex_menu_link">Stories</a></li>
-                        <li>
-                            <button class="button">
-                                Get started
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </header>
-    <section class="main">
-        <div class="container flex main_container">
-            <div>
-                <h1 class="main_title">
-                    Build stunning websites & apps.
-                </h1>
-                <p class="main_text">
-                    Create live segments and target the right people for messages based on their behaviors.
-                </p>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container flex main_container">
                 <div>
-                    <button id="open-modal-getstarted" class="main_button button button_blue">
-                        Get Started
-                    </button>
-                    <button id="open-modal" class="main_button button main_button-learn">
-                        Learn More
-                    </button>
+                    <h1 class="main_title">
+                        Build stunning websites & apps.
+                    </h1>
+                    <p class="main_text">
+                        Create live segments and target the right people for messages based on their behaviors.
+                    </p>
+                    <div>
+                        <button id="open-modal-getstarted" class="main_button button button_blue">
+                            Get Started
+                        </button>
+                        <button id="open-modal" class="main_button button main_button-learn">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img class="main_img" src="./img/header/main_img.png" alt="main_image">
                 </div>
             </div>
-            <div>
-                <img src="./img/header/main_img.png" alt="main_image" class="main_img">
+        </section>
+        <section class="about">
+            <div class="about_text container flex">
+                <div class="about_text-whatabout">
+                    <h1>
+                        What is it about?
+                    </h1>
+                    <p>
+                        Building a website for a startup that looks amazing is not a rocket science anymore.
+                    </p>
+                </div>
+                <div class="about_text-whofor">
+                    <h1>
+                        Who is it for?
+                    </h1>
+                    <p>
+                        Startups, small companies and teams, entrepreneurs and web developers.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="about">
-        <div class="about_text container flex">
-            <div class="about_text-whatabout">
-                <h1>
-                    What is it about?
+        </section>
+        <section class="logos_1 logos_block container flex">
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo1.png" alt="logo1" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo2.png" alt="logo2" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo3.png" alt="logo3" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo4.png" alt="logo4" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo5.png" alt="logo5" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
+            </div>
+        </section>
+        <section id="about" class="features">
+            <div class="container features_flex-column">
+                <h6 class="info_pretitle info_pretitle-green">
+                    Features
+                </h6>
+                <h1 class="info_title">
+                    Easily find leads and customers
                 </h1>
-                <p>
-                    Building a website for a startup that looks amazing is not a rocket science anymore.
+                <p class="info_text info_features_text">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
                 </p>
+
+                <div class="customers_items">
+                    <div class="custom_title_flex">
+                        <svg class="custom_icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z"
+                                fill="#2B292D" />
+                        </svg>
+                        <p class="custom_title">
+                            Acquire new customers
+                        </p>
+                    </div>
+                    <p class="custom_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="customers_items">
+                    <div class="custom_title_flex">
+                        <svg class="custom_icon" width="23" height="25" viewBox="0 0 23 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105ZM9.68421 10.7143V19.0476H13.3158V10.7143H9.68421ZM23 21.4286V25H0V21.4286H23ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474Z"
+                                fill="#2B292D" />
+                        </svg>
+                        <p class="custom_title">
+                            Engage users
+                        </p>
+                    </div>
+                    <p class="custom_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="customers_items">
+                    <div class="custom_title_flex">
+                        <svg class="custom_icon" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM19.5556 7.33333H14.6667C14.6667 9.31333 12.98 11 11 11C9.02 11 7.33333 9.31333 7.33333 7.33333H2.44444V2.44444H19.5556V7.33333ZM22 15.8889H14.6667C14.6667 17.9178 13.0289 19.5556 11 19.5556C8.97111 19.5556 7.33333 17.9178 7.33333 15.8889H0V19.5556C0 20.9 1.1 22 2.44444 22H19.5556C20.9 22 22 20.9 22 19.5556V15.8889Z"
+                                fill="#2B292D" />
+                        </svg>
+                        <p class="custom_title">
+                            Develop across platforms
+                        </p>
+                    </div>
+                    <p class="custom_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <img class="features_img" src="./img/Invision_Screen.png" alt="Invision_Screen">
+                <img class="binoculars_img" src="./img/binoculars.svg" alt="binoculars">
+
             </div>
-            <div class="about_text-whofor">
-                <h1>
-                    Who is it for?
+        </section>
+        <section class="inbox">
+            <div class="container flex flex__inbox-column">
+                <div class="container-image">
+                    <img class="container-image_img" src="./img/team_inbox/ouch.svg" alt="img_inbox">
+                </div>
+                <div class="info">
+                    <p class="info_pretitle info_pretitle-orange">
+                        Team Inbox
+                    </p>
+                    <h3 class="info_title">
+                        Manage conversations
+                    </h3>
+                    <p class="info_text">
+                        One place to manage and respond to all conversations with leads and users. Receive messages from
+                        leads.
+                    </p>
+                    <div class="inbox_response">
+                        <p class="inbox_text">
+                            “Great widgets. Great selection. Great design and <span class="inbox_text-bold">easy to
+                                implement</span>. Definitely a huge time saver for a web developer!”
+                        </p>
+                        <div class="flex flex_start">
+                            <img class="inbox_img" src="./img/team_inbox/person.svg" alt="person">
+                            <div>
+                                <p class="inbox_name">
+                                    Viella Malkovich
+                                </p>
+                                <p class="inbox_position">
+                                    Creative Director at Johnson
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="communication">
+            <div class="container flex flex__communication-column">
+                <div class="info">
+                    <p class="info_pretitle info_pretitle-blue">
+                        Communicate Better
+                    </p>
+                    <h3 class="info_title communication__title">
+                        Built for busy small teams
+                    </h3>
+                    <p class="info_text communication__text">
+                        Three products that can be used independently or combined together for your company’s needs.
+                    </p>
+                    <button class="button communication__button">
+                        Get started
+                    </button>
+                </div>
+                <img class="communication_img" src="./img/communicate_better/ouch.png" alt="communication">
+            </div>
+            <div class="container flex offer__flex">
+                <div class="offer">
+                    <p class="offer_text">
+                        <span class="offer_title">Subscriptions.</span> Foundation works with the tools and services you
+                        already use every day.
+                    </p>
+                    <a href="#" class="offer_link">Learn more about subscriptions</a>
+                </div>
+                <div class="offer">
+                    <p class="offer_text">
+                        <span class="offer_title">Flexible Hours.</span> Get started with our simple snippet of
+                        JavaScript
+                        or easy to install SDKs for iOS and Android.
+                    </p>
+                    <a href="#" class="offer_link">Get more info about hours</a>
+                </div>
+                <div class="offer">
+                    <p class="offer_text">
+                        <span class="offer_title">Fast Communication.</span> We offer measures like 2FA and SSO to
+                        ensure
+                        the safety of your data.
+                    </p>
+                    <a href="#" class="offer_link">Communication guidelines</a>
+                </div>
+            </div>
+        </section>
+        <section class="audience">
+            <div class="container">
+                <h3 class="info_pretitle audience_pretitle">
+                    Engage Visitors
+                </h3>
+                <h1 class="info_title audience_title">
+                    Understand your audience
                 </h1>
-                <p>
-                    Startups, small companies and teams, entrepreneurs and web developers.
+                <p class="info_text audience_text">
+                    Early stage company? Eligible applicants get all of our products for just $49 a month.
                 </p>
             </div>
-        </div>
-    </section>
-    <section class="logos_1 logos_block container flex">
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo1.png" alt="logo1" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo2.png" alt="logo2" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo3.png" alt="logo3" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo4.png" alt="logo4" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo5.png" alt="logo5" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
-        </div>
-    </section>
-    <section id="about" class="features">
-        <div class="container features_flex-column">
-            <h6 class="info_pretitle info_pretitle-green">
-                Features
-            </h6>
-            <h1 class="info_title">
-                Easily find leads and customers
-            </h1>
-            <p class="info_text info_features_text">
-                Send one-off and automated email, push, and in-app messages to people. Create better stories.
-            </p>
-
-            <div class="customers_items">
-                <div class="custom_title_flex">
-                    <svg class="custom_icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z"
-                            fill="#2B292D" />
-                    </svg>
-                    <p class="custom_title">
-                        Acquire new customers
-                    </p>
-                </div>
-                <p class="custom_text">
-                    Everything you need to start building – including open-source code, documentation.
-                </p>
-            </div>
-            <div class="customers_items">
-                <div class="custom_title_flex">
-                    <svg class="custom_icon" width="23" height="25" viewBox="0 0 23 25" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 5.95238L11.5 0L23 5.95238V8.33333H0V5.95238ZM2.42105 10.7143V19.0476H6.05263V10.7143H2.42105ZM9.68421 10.7143V19.0476H13.3158V10.7143H9.68421ZM23 21.4286V25H0V21.4286H23ZM16.9474 10.7143V19.0476H20.5789V10.7143H16.9474Z"
-                            fill="#2B292D" />
-                    </svg>
-                    <p class="custom_title">
-                        Engage users
-                    </p>
-                </div>
-                <p class="custom_text">
-                    Everything you need to start building – including open-source code, documentation.
-                </p>
-            </div>
-            <div class="customers_items">
-                <div class="custom_title_flex">
-                    <svg class="custom_icon" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.5556 0H2.44444C1.1 0 0 1.1 0 2.44444V11C0 12.3444 1.1 13.4444 2.44444 13.4444H19.5556C20.9 13.4444 22 12.3444 22 11V2.44444C22 1.1 20.9 0 19.5556 0ZM19.5556 7.33333H14.6667C14.6667 9.31333 12.98 11 11 11C9.02 11 7.33333 9.31333 7.33333 7.33333H2.44444V2.44444H19.5556V7.33333ZM22 15.8889H14.6667C14.6667 17.9178 13.0289 19.5556 11 19.5556C8.97111 19.5556 7.33333 17.9178 7.33333 15.8889H0V19.5556C0 20.9 1.1 22 2.44444 22H19.5556C20.9 22 22 20.9 22 19.5556V15.8889Z"
-                            fill="#2B292D" />
-                    </svg>
-                    <p class="custom_title">
-                        Develop across platforms
-                    </p>
-                </div>
-                <p class="custom_text">
-                    Everything you need to start building – including open-source code, documentation.
-                </p>
-            </div>
-            <img class="features_img" src="./img/Invision_Screen.png" alt="Invision_Screen">
-            <img class="binoculars_img" src="./img/binoculars.svg" alt="binoculars">
-
-        </div>
-    </section>
-    <section class="inbox">
-        <div class="container flex flex__inbox-column">
-            <div class="container-image">
-                <img class="container-image_img" src="./img/team_inbox/ouch.svg" alt="img_inbox">
-            </div>
-            <div class="info">
-                <p class="info_pretitle info_pretitle-orange">
-                    Team Inbox
-                </p>
-                <h3 class="info_title">
-                    Manage conversations
-                </h3>
-                <p class="info_text">
-                    One place to manage and respond to all conversations with leads and users. Receive messages from
-                    leads.
-                </p>
-                <div class="inbox_response">
-                    <p class="inbox_text">
-                        “Great widgets. Great selection. Great design and <span class="inbox_text-bold">easy to
-                            implement</span>. Definitely a huge time saver for a web developer!”
-                    </p>
-                    <div class="flex flex_start">
-                        <img class="inbox_img" src="./img/team_inbox/person.svg" alt="person">
-                        <div>
-                            <p class="inbox_name">
-                                Viella Malkovich
-                            </p>
-                            <p class="inbox_position">
-                                Creative Director at Johnson
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="communication">
-        <div class="container flex flex__communication-column">
-            <div class="info">
-                <p class="info_pretitle info_pretitle-blue">
-                    Communicate Better
-                </p>
-                <h3 class="info_title communication__title">
-                    Built for busy small teams
-                </h3>
-                <p class="info_text communication__text">
-                    Three products that can be used independently or combined together for your company’s needs.
-                </p>
-                <button class="button communication__button">
-                    Get started
-                </button>
-            </div>
-            <img class="communication_img" src="./img/communicate_better/ouch.png" alt="communication">
-        </div>
-        <div class="container flex offer__flex">
-            <div class="offer">
-                <p class="offer_text">
-                    <span class="offer_title">Subscriptions.</span> Foundation works with the tools and services you
-                    already use every day.
-                </p>
-                <a href="#" class="offer_link">Learn more about subscriptions</a>
-            </div>
-            <div class="offer">
-                <p class="offer_text">
-                    <span class="offer_title">Flexible Hours.</span> Get started with our simple snippet of JavaScript
-                    or easy to install SDKs for iOS and Android.
-                </p>
-                <a href="#" class="offer_link">Get more info about hours</a>
-            </div>
-            <div class="offer">
-                <p class="offer_text">
-                    <span class="offer_title">Fast Communication.</span> We offer measures like 2FA and SSO to ensure
-                    the safety of your data.
-                </p>
-                <a href="#" class="offer_link">Communication guidelines</a>
-            </div>
-        </div>
-    </section>
-    <section class="audience">
-        <div class="container">
-            <h3 class="info_pretitle audience_pretitle">
-                Engage Visitors
-            </h3>
-            <h1 class="info_title audience_title">
-                Understand your audience
-            </h1>
-            <p class="info_text audience_text">
-                Early stage company? Eligible applicants get all of our products for just $49 a month.
-            </p>
-        </div>
-        <div class="audience_buttons">
-            <button class="button audience_button-1 button_blue">
-                Get Started
-            </button>
-            <button class="button audience_button-2 button_white">
-                Learn More
-            </button>
-        </div>
-        <div class="audience_categories container">
-            <div class="audience_item">
-                <a href="#" class="audience_item__link">
-                    <img class="audience_image" src="./img/audience_categories/1_developers.png" alt="audience_item-1">
-                    <p class="audience_category--name">Developers</p>
-                </a>
-            </div>
-            <div class="audience_item">
-                <a href="#" class="audience_item__link">
-                    <img class="audience_image" src="./img/audience_categories/2_entertainment.png"
-                        alt="audience_item-2">
-                    <p class="audience_category--name">Entertainment</p>
-                </a>
-            </div>
-            <div class="audience_item">
-                <a href="#" class="audience_item__link">
-                    <img class="audience_image" src="./img/audience_categories/3_athletes.png" alt="audience_item-3">
-                    <p class="audience_category--name">Athletes</p>
-                </a>
-            </div>
-            <div class="audience_item">
-                <a href="#" class="audience_item__link">
-                    <img class="audience_image" src="./img/audience_categories/4_creators.png" alt="audience_item-4">
-                    <p class="audience_category--name">Creators</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="logos_2 logos_block container flex">
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo1.png" alt="logo1" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo2.png" alt="logo2" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo3.png" alt="logo3" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo4.png" alt="logo4" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo5.png" alt="logo5" class="logo_item">
-        </div>
-        <div class="logos__grid-wrapper">
-            <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
-        </div>
-    </section>
-
-    <section id="feedback" class="feedback">
-        <div class="container">
-            <div class="carusel">
-                <div class="carusel__item">
-                    <p class="carusel_pretitle">
-                        Trusted by the world’s most innovative businesses – big and small
-                    </p>
-                    <p class="carusel__item_text">
-                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
-                        pages,
-                        send emails, find freelancers. Perfect for sales, marketing, and support”
-                    </p>
-                    <p class="inbox_name">
-                        Viella Malkovich
-                    </p>
-                    <p class="inbox_position">
-                        Creative Director at Johnson
-                    </p>
-                </div>
-                <div class="carusel__item">
-                    <p class="carusel_pretitle">
-                        If you fall asleep now, you will dream. If you study now, you will live your dream
-                    </p>
-                    <p class="carusel__item_text">
-                        “Think of all the beauty still left around you and be happy, they are composed like music. Guided by his sense of beauty”
-                    </p>
-                    <p class="inbox_name">
-                        Sarah Whiteman
-                    </p>
-                    <p class="inbox_position">
-                        Tanahcon CEO at SpaceX
-                    </p>
-                </div>
-                <div class="carusel__item">
-                    <p class="carusel_pretitle">
-                        Not everyone can truly succeed in everything. But success only comes with self-management and determination
-                    </p>
-                    <p class="carusel__item_text">
-                        “Each of us has within our power the ability to disrupt and transform some of the barriers”
-                    </p>
-                    <p class="inbox_name">
-                        Elon Mask
-                    </p>
-                    <p class="inbox_position">
-                        Director at SpaceX
-                    </p>
-                </div>
-            </div>
-            <div class="carusel_img">
-                <img src="/img/green_ball.png" alt="green_ball">
-            </div>
-        </div>
-    </section>
-
-    <section class="hiring">
-        <div class="container hiring_flex-column">
-            <h1 class="info_title hiring_title">
-                We’re hiring
-            </h1>
-            <p class="info_text hiring_text">
-                We’re a team of lifelong learners. We’re equal parts left and right brained.
-            </p>
-            <button class="button button_about-company">
-                More about Company
-            </button>
-            <div>
-                <div class="job-items">
-                    <div class="flex">
-                        <div class="job-items_left">
-                            <p class="job-title">Front-End Developer</p>
-                            <p class="job-city">Los Angeles / Remote</p>
-                        </div>
-                        <div class="job_items_right">
-                            <p class="about-icon">></p>
-                        </div>
-                    </div>
-                    <p class="about-text">
-                        Everything you need to start building – including open-source code, documentation.
-                    </p>
-                </div>
-                <div class="job-items">
-                    <div class="flex">
-                        <div class="job-items_left">
-                            <p class="job-title">Community Manager</p>
-                            <p class="job-city">New York / Full-Time</p>
-                        </div>
-                        <div class="job_items_right">
-                            <p class="about-icon">></p>
-                        </div>
-                    </div>
-                    <p class="about-text">
-                        Everything you need to start building – including open-source code, documentation.
-                    </p>
-                </div>
-                <div class="job-items">
-                    <div class="flex">
-                        <div class="job-items_left">
-                            <p class="job-title">UX/UI Designer</p>
-                            <p class="job-city">New York / Full-Time</p>
-                        </div>
-                        <div class="job_items_right">
-                            <p class="about-icon">></p>
-                        </div>
-                    </div>
-                    <p class="about-text">
-                        Everything you need to start building – including open-source code, documentation.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="allsurfaces container">
-        <div class="allsurfaces_description">
-            <h1 class="info_title allsurfaces_title">
-                All Surfaces Covered
-            </h1>
-            <p class="info_text allsurfaces_text">
-                IOON kills bacteria on your hands, food, tables, laptops, you name it
-            </p>
-        </div>
-        <div class="allsurfaces_items">
-            <img src="./img/all_surfaces_covered_items/item-1.png" alt="allsurfaces_item-1" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-2.png" alt="allsurfaces_item-2" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-3.png" alt="allsurfaces_item-3" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-4.png" alt="allsurfaces_item-4" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-5.png" alt="allsurfaces_item-5" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-6.png" alt="allsurfaces_item-6" class="surface_item">
-            <img src="./img/all_surfaces_covered_items/item-7.png" alt="allsurfaces_item-7" class="surface_item">
-        </div>
-    </section>
-    <section class="start_free_trial flex">
-        <img class="start_free_image" src="./img/cat_in_window.png" alt="cat_in_window">
-        <div class="start_trial_description">
-            <h1 class="start_trial_title">
-                Start your free trial.
-            </h1>
-            <p class="start_trial_text">
-                Get notified about company updates, news and blog posts. We hate spam. </p>
-            <form>
-                <input class="input" id="email" placeholder="Enter your email" type="email">
-                <button class="button start_trial_button">
+            <div class="audience_buttons">
+                <button class="button audience_button-1 button_blue">
                     Get Started
                 </button>
-            </form>
-            <label class="free_14day_label">
-                <input class="free_14day_checkbox" type="checkbox">
-                <span class="fake_checkbox"></span>
-                <span class="free_14day_trial">
-                    Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#">Terms of Use.</a>
-                </span>
-            </label>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer_service container flex">
-            <div class="foundation">
-                <div class="footer_logo flex">
-                    <img src="./img/footer_logo.svg" alt="logo">
-                    <div>
-                        <h1 class="footer_logo_title">
-                            Foundation
-                        </h1>
-                        <p class="footer_logo_text">
-                            Startup landing template
+                <button class="button audience_button-2 button_white">
+                    Learn More
+                </button>
+            </div>
+            <div class="audience_categories container">
+                <div class="audience_item">
+                    <a href="#" class="audience_item__link">
+                        <img class="audience_image" src="./img/audience_categories/1_developers.png"
+                            alt="audience_item-1">
+                        <p class="audience_category--name">Developers</p>
+                    </a>
+                </div>
+                <div class="audience_item">
+                    <a href="#" class="audience_item__link">
+                        <img class="audience_image" src="./img/audience_categories/2_entertainment.png"
+                            alt="audience_item-2">
+                        <p class="audience_category--name">Entertainment</p>
+                    </a>
+                </div>
+                <div class="audience_item">
+                    <a href="#" class="audience_item__link">
+                        <img class="audience_image" src="./img/audience_categories/3_athletes.png"
+                            alt="audience_item-3">
+                        <p class="audience_category--name">Athletes</p>
+                    </a>
+                </div>
+                <div class="audience_item">
+                    <a href="#" class="audience_item__link">
+                        <img class="audience_image" src="./img/audience_categories/4_creators.png"
+                            alt="audience_item-4">
+                        <p class="audience_category--name">Creators</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="logos_2 logos_block container flex">
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo1.png" alt="logo1" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo2.png" alt="logo2" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo3.png" alt="logo3" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo4.png" alt="logo4" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo5.png" alt="logo5" class="logo_item">
+            </div>
+            <div class="logos__grid-wrapper">
+                <img src="./img/logos/logo6.png" alt="logo6" class="logo_item">
+            </div>
+        </section>
+        <section id="feedback" class="feedback">
+            <div class="container">
+                <div class="carusel">
+                    <div class="carusel__item">
+                        <p class="carusel_pretitle">
+                            Trusted by the world’s most innovative businesses – big and small
+                        </p>
+                        <p class="carusel__item_text">
+                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing
+                            pages,
+                            send emails, find freelancers. Perfect for sales, marketing, and support”
+                        </p>
+                        <p class="inbox_name">
+                            Viella Malkovich
+                        </p>
+                        <p class="inbox_position">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                    <div class="carusel__item">
+                        <p class="carusel_pretitle">
+                            If you fall asleep now, you will dream. If you study now, you will live your dream
+                        </p>
+                        <p class="carusel__item_text">
+                            “Think of all the beauty still left around you and be happy, they are composed like music.
+                            Guided by his sense of beauty”
+                        </p>
+                        <p class="inbox_name">
+                            Sarah Whiteman
+                        </p>
+                        <p class="inbox_position">
+                            Tanahcon CEO at SpaceX
+                        </p>
+                    </div>
+                    <div class="carusel__item">
+                        <p class="carusel_pretitle">
+                            Not everyone can truly succeed in everything. But success only comes with self-management
+                            and
+                            determination
+                        </p>
+                        <p class="carusel__item_text">
+                            “Each of us has within our power the ability to disrupt and transform some of the barriers”
+                        </p>
+                        <p class="inbox_name">
+                            Elon Mask
+                        </p>
+                        <p class="inbox_position">
+                            Director at SpaceX
                         </p>
                     </div>
                 </div>
-                <p class="foundation-text">
-                    Foundation is a website template for startups and small teams. It helps to build a website in no
-                    time.
-                </p>
-                <div class="foundation_buttons">
-                    <a href="#" class="service_btn">
-                        <img src="./img/AppStore_btn.png" alt="AppStore_btn">
-                    </a>
-                    <a href="#" class="service_btn">
-                        <img src="./img/GooglePlay_btn.png" alt="GooglePlay_btn">
-                    </a>
+                <div class="carusel_img">
+                    <img src="/img/green_ball.png" alt="green_ball">
                 </div>
             </div>
-            <div class="service_nav flex">
-                <div class="service_nav_column">
-                    <h1 class="service_nav-title">
-                        Product
-                    </h1>
-                    <ul class="footer_service_ul">
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Acquire Users</a>
-                        </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Content Marketing</a>
-                        </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Website Templates</a>
-                        </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Customer Management</a>
-                        </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Virtual Inbox</a>
-                        </li>
+        </section>
+        <section class="hiring">
+            <div class="container hiring_flex-column">
+                <h1 class="info_title hiring_title">
+                    We’re hiring
+                </h1>
+                <p class="info_text hiring_text">
+                    We’re a team of lifelong learners. We’re equal parts left and right brained.
+                </p>
+                <button class="button button_about-company">
+                    More about Company
+                </button>
+                <div>
+                    <div class="job-items">
+                        <div class="flex">
+                            <div class="job-items_left">
+                                <p class="job-title">Front-End Developer</p>
+                                <p class="job-city">Los Angeles / Remote</p>
+                            </div>
+                            <div class="job_items_right">
+                                <p class="about-icon">></p>
+                            </div>
+                        </div>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="job-items">
+                        <div class="flex">
+                            <div class="job-items_left">
+                                <p class="job-title">Community Manager</p>
+                                <p class="job-city">New York / Full-Time</p>
+                            </div>
+                            <div class="job_items_right">
+                                <p class="about-icon">></p>
+                            </div>
+                        </div>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="job-items">
+                        <div class="flex">
+                            <div class="job-items_left">
+                                <p class="job-title">UX/UI Designer</p>
+                                <p class="job-city">New York / Full-Time</p>
+                            </div>
+                            <div class="job_items_right">
+                                <p class="about-icon">></p>
+                            </div>
+                        </div>
+                        <p class="about-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
                 </div>
-                <div class="service_nav_column">
-                    <h1 class="service_nav-title">
-                        Company
-                    </h1>
-                    <ul class="footer_service_ul">
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">About Foundation</a>
+            </div>
+        </section>
+        <section class="allsurfaces container">
+            <div class="allsurfaces_description">
+                <h1 class="info_title allsurfaces_title">
+                    All Surfaces Covered
+                </h1>
+                <p class="info_text allsurfaces_text">
+                    IOON kills bacteria on your hands, food, tables, laptops, you name it
+                </p>
+            </div>
+            <div class="allsurfaces_items">
+                <img src="./img/all_surfaces_covered_items/item-1.png" alt="allsurfaces_item-1" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-2.png" alt="allsurfaces_item-2" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-3.png" alt="allsurfaces_item-3" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-4.png" alt="allsurfaces_item-4" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-5.png" alt="allsurfaces_item-5" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-6.png" alt="allsurfaces_item-6" class="surface_item">
+                <img src="./img/all_surfaces_covered_items/item-7.png" alt="allsurfaces_item-7" class="surface_item">
+            </div>
+        </section>
+        <section class="start_free_trial flex">
+            <img class="start_free_image" src="./img/cat_in_window.png" alt="cat_in_window">
+            <div class="start_trial_description">
+                <h1 class="start_trial_title">
+                    Start your free trial.
+                </h1>
+                <p class="start_trial_text">
+                    Get notified about company updates, news and blog posts. We hate spam. </p>
+                <form>
+                    <input class="input" id="email" placeholder="Enter your email" type="email">
+                    <button class="button start_trial_button">
+                        Get Started
+                    </button>
+                </form>
+                <label class="free_14day_label">
+                    <input class="free_14day_checkbox" type="checkbox">
+                    <span class="fake_checkbox"></span>
+                    <span class="free_14day_trial">
+                        Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#">Terms of Use.</a>
+                    </span>
+                </label>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer_service container flex">
+                <div class="foundation">
+                    <div class="footer_logo flex">
+                        <img src="./img/footer_logo.svg" alt="logo">
+                        <div>
+                            <h1 class="footer_logo_title">
+                                Foundation
+                            </h1>
+                            <p class="footer_logo_text">
+                                Startup landing template
+                            </p>
+                        </div>
+                    </div>
+                    <p class="foundation-text">
+                        Foundation is a website template for startups and small teams. It helps to build a website in no
+                        time.
+                    </p>
+                    <div class="foundation_buttons">
+                        <a href="#" class="service_btn">
+                            <img src="./img/AppStore_btn.png" alt="AppStore_btn">
+                        </a>
+                        <a href="#" class="service_btn">
+                            <img src="./img/GooglePlay_btn.png" alt="GooglePlay_btn">
+                        </a>
+                    </div>
+                </div>
+                <div class="service_nav flex">
+                    <div class="service_nav_column">
+                        <h1 class="service_nav-title">
+                            Product
+                        </h1>
+                        <ul class="footer_service_ul">
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Acquire Users</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Content Marketing</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Website Templates</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Customer Management</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Virtual Inbox</a>
+                            </li>
+                    </div>
+                    <div class="service_nav_column">
+                        <h1 class="service_nav-title">
+                            Company
+                        </h1>
+                        <ul class="footer_service_ul">
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">About Foundation</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Brand Guidelines</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Press Kit</a>
+                            </li>
+                            <li class="footer_service_li">
+                                <a class="footer_service_link" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_nav_bar container flex">
+                <nav class="final_links_block">
+                    <ul class="footer_ul flex">
+                        <li class="footer_li">
+                            <a class="footer_link" href="#">Terms</a>
                         </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Brand Guidelines</a>
+                        <li class="footer_li">
+                            <a class="footer_link" href="#">Privacy</a>
                         </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Press Kit</a>
-                        </li>
-                        <li class="footer_service_li">
-                            <a class="footer_service_link" href="#">Support</a>
+                        <li class="footer_li">
+                            <a class="footer_link" href="#">License</a>
                         </li>
                     </ul>
+                </nav>
+                <div class="social_nav_bar">
+                    <a href="https://twitter.com" class="social_img">
+                        <img src="./img/socials/icon-twitter.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.facebook.com" class="social_img">
+                        <img src="./img/socials/icon-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://ru.linkedin.com" class="social_img">
+                        <img src="./img/socials/icon-LinkedIn.svg" alt="LinkedIn">
+                    </a>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="footer_nav_bar container flex">
-            <nav class="final_links_block">
-                <ul class="footer_ul flex">
-                    <li class="footer_li">
-                        <a class="footer_link" href="#">Terms</a>
-                    </li>
-                    <li class="footer_li">
-                        <a class="footer_link" href="#">Privacy</a>
-                    </li>
-                    <li class="footer_li">
-                        <a class="footer_link" href="#">License</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="social_nav_bar">
-                <a href="https://twitter.com" class="social_img">
-                    <img src="./img/socials/icon-twitter.svg" alt="twitter">
-                </a>
-                <a href="https://www.facebook.com" class="social_img">
-                    <img src="./img/socials/icon-facebook.svg" alt="facebook">
-                </a>
-                <a href="https://ru.linkedin.com" class="social_img">
-                    <img src="./img/socials/icon-LinkedIn.svg" alt="LinkedIn">
-                </a>
+
+        </footer>
+        <div class="modal-overlay">
+            <div class="modal">
+                <p>
+                    You'll be redirected to<br>
+                    https://byte-education.com/ in a moment! :)
+                </p>
+                <p class="close">
+                    x
+                </p>
             </div>
         </div>
-
-    </footer>
-    <div class="modal-overlay">
-        <div class="modal">
-            <p>
-                You'll be redirected to<br>
-                https://byte-education.com/ in a moment! :)
-            </p>
-            <p class="close">
-                x
-            </p>
+        <div class="modal-overlay-getstarted">
+            <div class="modal_getstarted">
+                <p class="modal_getstarted-text">
+                    You've got started successfully!
+                </p>
+                <p class="close_modal">
+                    x
+                </p>
+                <button class="button button_started">
+                    OK
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="modal-overlay-getstarted">
-        <div class="modal_getstarted">
-            <p class="modal_getstarted-text">
-                You've got started successfully!
-            </p>
-            <p class="close_modal">
-                x
-            </p>
-            <button class="button button_started">
-                OK
-            </button>
+        <div id="up">
+            <span>></span>
         </div>
-    </div>
-    <div id="up">
-        <span>></span>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="./script/bxslider.js"></script>
-    <script src="./script/script.js"></script>
-    <script src="./script/modal.js"></script>
-    <script src="./script/upButton.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <script src="./script/bxslider.js"></script>
+        <script src="./script/script.js"></script>
+        <script src="./script/modal.js"></script>
+        <script src="./script/upButton.js"></script>
+    </main>
 </body>
 
 </html>

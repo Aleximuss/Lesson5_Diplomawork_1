@@ -1,0 +1,45 @@
+.bx-wrapper {
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    padding-bottom: 38px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 13px;
+    background: rgb(43, 41, 45, 0.2);
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: rgb(49, 66, 197);
+}
+
+@media screen and (max-width: 1090px) {
+    .bx-viewport {
+        margin-bottom: 14px;
+    }
+
+    .bx-pager {
+        padding-bottom: 51px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bx-wrapper {
+        margin-bottom: 40px;
+    }
+    
+    .bx-viewport {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .bx-pager {
+        padding-bottom: 40px;
+    }
+}
